@@ -20,6 +20,7 @@ class Vacancy(models.Model):
         verbose_name='категория'
     )
 
+
     def __str__(self):
         return self.title
 

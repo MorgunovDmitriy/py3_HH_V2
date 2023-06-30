@@ -13,5 +13,8 @@
         <div>{{ v.title }} - {{ v.salary }}</div>
     {% endfor %}
 
+    {% for r in vacancys %}
+        <div><a href="/vacancies-info/{{ v.id }}">{{ v.title }}</a></div>
+    {% endfor %}
 {% endblock %}
 

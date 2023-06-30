@@ -35,3 +35,11 @@ def company(request):
     companys=Company.objects.all() #SElect в Django ORM
     context={"companys":companys}
     return render(request, 'companys.html',context)
+
+def vacancy_info(request, id):
+    candidates = vacancy_objects.candidate.all()
+    vacancy_object = Vacancy.objects.get(id=id)
+    return render(
+        request, 'vacancies_detail.html',
+        {'vacancy': vacancy_object}, candidates
+    )
