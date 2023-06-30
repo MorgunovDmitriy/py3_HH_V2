@@ -43,4 +43,4 @@ git push
 # Создать класс (модель) в core.models
 python manage.py makemigrations
 python manage.py migrate
-# добавляем его в админку
+# добавляем его в админку2
